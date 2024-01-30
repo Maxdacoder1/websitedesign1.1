@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {font-family: "Karma", sans-serif}
+        .w3-bar-block .w3-bar-item {padding:20px}
+        .media-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .media-container > div {
+            margin: 10px;
+        }
+        .video-container iframe {
+            width: 600px; /* Adjust as needed */
+            height: 500px; /* Adjust as needed */
+        }
+        .image-container img {
+            width: 80%; /* Adjust as needed */
+        }
+        /* Larger Screen Adjustments */
+        @media screen and (min-width: 1200px) {
+            .w3-top .w3-white {
+                max-width: 90%; /* More flexible width */
+            }
+            .w3-bar-item, .w3-button {
+                padding: 30px 20px; /* Larger padding for larger screens */
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: larger; /* Larger text for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+        <a href="index.html#food" onclick="w3_close()" class="w3-bar-item w3-button">Arts & Crafts</a>
+        <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-center w3-padding-16">DIY Crafts Haven</div>
+        </div>
+    </div>
+
+    <div class="w3-container media-container">
+        <!-- Image -->
+        <div class="image-container">
+            <img src="https://www.kidsartncraft.com/wp-content/uploads/2023/06/how-to-make-minion-pencil-stand-craft-tutorial-for-kids-final-image.jpg">
+        </div>
+
+        <!-- Video Embed -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/IvC9gQSL9As?si=x_bhWfbIkK0gs_mT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <strong>Minion Pencil Stand Craft Tutorial</strong>
+        <h2>Materials Needed:</h2>
+        <ul>
+            <li>Empty Tin Can</li>
+            <li>Yellow, Blue, and Black Construction Paper</li>
+            <li>White Paper</li>
+            <li>Glue</li>
+            <li>Scissors</li>
+            <li>Black Marker</li>
+            <li>Ruler</li>
+            <li>Pencil</li>
+            <li>Googly Eyes (or white paper and a black marker for the eyes)</li>
+        </ul>
+    
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Prepare the Tin Can: Ensure the tin can is clean, dry, and free of sharp edges.</li>
+            <li>Cover the Can with Yellow Paper: Measure, cut, and glue the yellow paper around the can.</li>
+            <li>Create the Overalls: Cut and glue a strip of blue paper around the lower part of the can for the overalls.</li>
+            <li>Add Overall Details: Cut out and glue additional blue paper for the pocket and straps of the overalls.</li>
+            <li>Make the Goggles: Cut a black paper strip for the goggle strap and attach it, then glue on googly eyes or paper eyes.</li>
+            <li>Attach the Eyes: Position and glue the eyes over the goggle strap.</li>
+            <li>Add Final Details: Draw the mouth and hair with a black marker, and add any additional details as desired.</li>
+            <li>Let it Dry: Allow all glue to dry completely before use.</li>
+            <li>Use Your Minion Pencil Stand: Place stationery items in the stand.</li>
+        </ol>
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+         
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
